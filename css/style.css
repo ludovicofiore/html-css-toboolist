@@ -30,10 +30,11 @@ h1 {
 #container {
     background-color: white;
     width: 60%;
-    height: 500px;
+    height: auto;
     margin: 0 auto;
     margin-top: 50px;
     border-radius: 5px;
+    padding-bottom: 50px;
 }
 
 main {
@@ -75,6 +76,11 @@ nav {
     content: "\25BE";
 }
 
+.task-done, .task-not-done {
+    margin-bottom: 20px;
+}
+
+/* done, not-done */
 .task-done::before {
     content: "\2714";
     color: rgb(158, 217, 204);
@@ -84,10 +90,72 @@ nav {
     padding: 5px;
 }
 
+.task-not-done::before {
+    content: "\2718";
+    color:rgb(235, 77, 66);
+    border: 1px solid rgb(235, 77, 66);
+    border-radius: 50%;
+    margin-right: 7px;
+    padding: 5px;
+}
+
+/* prima e seconda section */
 .task-done.editorial::after {
     content: "Editorial";
     color: white;
     background-color: rgb(68, 171, 235);
+    font-size: 10px;
+    margin-left: 5px;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.task-done.goals::after {
+    content: "Q1 Goals";
+    color: white;
+    background-color: rgb(155, 113, 227);
+    font-size: 10px;
+    margin-left: 5px;
+    padding: 5px;
+    border-radius: 10px;
+
+}
+
+.task-not-done.recruiting::after {
+    content: "Recruiting";
+    color: white;
+    background-color: rgb(99, 191, 168);
+    font-size: 10px;
+    margin-left: 5px;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.task-done.mobile::after {
+    content: "Mobile";
+    color: white;
+    background-color: rgb(242, 159, 51);
+    font-size: 10px;
+    margin-left: 5px;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+/* terza section */
+.task-done.website::after {
+    content: "Website";
+    color: white;
+    background-color: rgb(217, 98, 161);
+    font-size: 10px;
+    margin-left: 5px;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.task-done.sales::after {
+    content: "Sales";
+    color: white;
+    background-color: rgb(177, 201, 38);
     font-size: 10px;
     margin-left: 5px;
     padding: 5px;
