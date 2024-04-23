@@ -5,9 +5,14 @@
     font-family: "Golos Text", sans-serif;
 }
 
+body {
+    background-color: rgb(247, 249, 250);
+}
+
 /* intestazione */
 header {
     padding: 20px;
+    background-color: white;
 }
 
 h1 {
@@ -19,4 +24,42 @@ h1 {
 #logo-boolean {
     line-height: 50px;
     vertical-align: middle;
+}
+
+/* container */
+#container {
+    background-color: white;
+    width: 60%;
+    height: 500px;
+    margin: 0 auto;
+    margin-top: 50px;
+    border-radius: 5px;
+}
+
+main {
+    margin-left: 50px;
+}
+
+
+/* style parte nav */
+nav {
+    padding-top: 15px;
+    padding-bottom: 10px;
+    padding-left: 50px;
+    border-bottom: 2px solid rgb(247, 249, 250);
+}
+#button-task {
+    background-color: rgb(70, 173, 242);
+    color: white;
+    padding: 5px;
+    border: 2px solid rgb(70, 173, 242) ;
+    border-radius: 5px;
+}
+
+#button-section {
+    background-color: white;
+    color: rgb(208, 213, 217);
+    padding: 5px;
+    border: 2px solid rgb(208, 213, 217);
+    border-radius: 5px;
 }
